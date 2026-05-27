@@ -1,0 +1,592 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado Kitty</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- MENÚ -->
+    <header>
+        <h1> Supermercado Kitty</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#bebidas">Bebidas</a>
+            <a href="#snacks">Snacks</a>
+            <a href="#frutas">Frutas</a>
+            <a href="#limpieza">Limpieza</a>
+            <a href="#maquillaje">Maquillaje</a>
+            <a href="#carrito">Carrito</a>
+            <a href="#perfil">Mi Perfil</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+    <img src="supermercado.jfif" alt="Supermercado">
+</section>
+
+    <!-- PROMOCIONES -->
+    <section id="inicio" class="promociones">
+        <h2> Promociones</h2>
+
+        <div class="productos">
+
+            <div class="card">
+                <img src="coca.webp" alt="">
+                <h3>Coca Cola</h3>
+                <p>Antes: <del>Q15.00</del></p>
+                <p class="precio">Q10.00</p>
+                <button onclick="agregarCarrito('Coca Cola',10)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="leche.jfif" alt="">
+                <h3>leche dos pinitos</h3>
+                <p>Antes: <del>Q20.00</del></p>
+                <p class="precio">Q18.00</p>
+                <button onclick="agregarCarrito('leche dos pinitos',20)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="papaslays.jfif" alt="">
+                <h3>Papas Lays</h3>
+                <p>Antes: <del>Q12.00</del></p>
+                <p class="precio">Q8.00</p>
+                <button onclick="agregarCarrito('Papas Lays',8)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="manzana.jfif" alt="">
+                <h3>Manzanas</h3>
+                <p>Antes: <del>Q20.00</del></p>
+                <p class="precio">Q15.00</p>
+                <button onclick="agregarCarrito('Manzanas',15)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="detergente.jfif" alt="">
+                <h3>Detergente ariel</h3>
+                <p>Antes: <del>Q40.00</del></p>
+                <p class="precio">Q30.00</p>
+                <button onclick="agregarCarrito('Detergente ariel',30)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="uvas.jfif" alt="">
+                <h3>Uvas</h3>
+                <p>Antes: <del>Q30.00</del></p>
+                <p class="precio">Q25.00</p>
+                <button onclick="agregarCarrito('Uvas',30)">Agregar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BEBIDAS -->
+    <section id="bebidas">
+        <h2> Bebidas</h2>
+
+        <div class="productos">
+
+            <div class="card">
+                <img src="coca.webp" alt="">
+                <h3>Coca Cola</h3>
+                <p class="precio">Q10.00</p>
+                <button onclick="agregarCarrito('Coca Cola',10)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="pepsi.png" alt="">
+                <h3>Pepsi</h3>
+                <p class="precio">Q9.00</p>
+                <button onclick="agregarCarrito('Pepsi',9)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="fanta.jfif" alt="">
+                <h3>Fanta</h3>
+                <p class="precio">Q7.00</p>
+                <button onclick="agregarCarrito('Fanta',7)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="jugodenaranja.jfif" alt="">
+                <h3>Jugo de Naranja del valle</h3>
+                <p class="precio">Q12.00</p>
+                <button onclick="agregarCarrito('Jugo de Naranja del valle',12)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="agua pura.jfif" alt="">
+                <h3>Agua Pura salvavidas</h3>
+                <p class="precio">Q5.00</p>
+                <button onclick="agregarCarrito('Agua Pura salvavidas',5)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="cafe.jfif" alt="">
+                <h3>Café lala</h3>
+                <p class="precio">Q18.00</p>
+                <button onclick="agregarCarrito('Café lala',18)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="cafe.jfif" alt="">
+                <h3>Té lipton</h3>
+                <p class="precio">Q11.00</p>
+                <button onclick="agregarCarrito('Té lipton',11)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="leche.jfif" alt="">
+                <h3>Leche dos pinitos</h3>
+                <p class="precio">Q18.00</p>
+                <button onclick="agregarCarrito('Leche dos pinitos',18)">Agregar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SNACKS -->
+    <section id="snacks">
+        <h2> Snacks</h2>
+
+        <div class="productos">
+
+            <div class="card">
+                <img src="papaslays.jfif" alt="">
+                <h3>Papas Lays</h3>
+                <p class="precio">Q15.00</p>
+                <button onclick="agregarCarrito('Papas Lays',15)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="galleta oreo.jfif" alt="">
+                <h3>Galletas oreo</h3>
+                <p class="precio">Q13.00</p>
+                <button onclick="agregarCarrito('Galletas oreo',13)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="chocolate.jfif" alt="">
+                <h3>Chocolate milka</h3>
+                <p class="precio">Q20.00</p>
+                <button onclick="agregarCarrito('Chocolate milka',7)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="palomitas.jfif" alt="">
+                <h3>Palomitas</h3>
+                <p class="precio">Q15.00</p>
+                <button onclick="agregarCarrito('Palomitas',10)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="bubbaloo chicles.jfif" alt="">
+                <h3>Chicles bubbaloo</h3>
+                <p class="precio">Q25.00</p>
+                <button onclick="agregarCarrito('Chicles bubbaloo',3)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="tortrix.jfif" alt="">
+                <h3>Tortrix de limón</h3>
+                <p class="precio">Q10.00</p>
+                <button onclick="agregarCarrito('Tortrix de limón',3)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="Doritos.jfif" alt="">
+                <h3>Doritos</h3>
+                <p class="precio">Q11.00</p>
+                <button onclick="agregarCarrito('Doritos',11)">Agregar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FRUTAS -->
+    <section id="frutas">
+        <h2> Frutas</h2>
+
+        <div class="productos">
+
+            <div class="card">
+                <img src="manzana.jfif" alt="">
+                <h3>Manzanas</h3>
+                <p class="precio">Q15.00</p>
+                <button onclick="agregarCarrito('Manzanas',15)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="babanos.jfif" alt="">
+                <h3>Bananos</h3>
+                <p class="precio">Q18.00</p>
+                <button onclick="agregarCarrito('Bananos',9)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="uvas.jfif" alt="">
+                <h3>Uvas</h3>
+                <p class="precio">Q30.00</p>
+                <button onclick="agregarCarrito('Uvas',13)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="naranja.jfif" alt="">
+                <h3>Naranjas</h3>
+                <p class="precio">Q10.00</p>
+                <button onclick="agregarCarrito('Naranjas',10)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="piña.jfif" alt="">
+                <h3>Piña</h3>
+                <p class="precio">Q16.00</p>
+                <button onclick="agregarCarrito('Piña',16)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="sandia.jfif" alt="">
+                <h3>Sandía</h3>
+                <p class="precio">Q25.00</p>
+                <button onclick="agregarCarrito('Sandía',25)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="fresas.jfif" alt="">
+                <h3>Fresas</h3>
+                <p class="precio">Q18.00</p>
+                <button onclick="agregarCarrito('Fresas',18)">Agregar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LIMPIEZA -->
+    <section id="limpieza">
+        <h2> Limpieza</h2>
+
+        <div class="productos">
+
+            <div class="card">
+                <img src="detergente.jfif" alt="">
+                <h3>Detergente ariel</h3>
+                <p class="precio">Q30.00</p>
+                <button onclick="agregarCarrito('Detergente ariel',30)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="escoba.jfif" alt="">
+                <h3>Escoba</h3>
+                <p class="precio">Q25.00</p>
+                <button onclick="agregarCarrito('Escoba',25)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="trapeador.png" alt="">
+                <h3>Trapeador</h3>
+                <p class="precio">Q30.00</p>
+                <button onclick="agregarCarrito('Trapeador',30)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="esponja.jfif" alt="">
+                <h3>Esponjas</h3>
+                <p class="precio">Q5.00</p>
+                <button onclick="agregarCarrito('Esponjas',5)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="axion.jfif" alt="">
+                <h3>Jabón de trastes axion</h3>
+                <p class="precio">Q5.00</p>
+                <button onclick="agregarCarrito('Jabón de traste axion',5)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="cloro clorox.jfif" alt="">
+                <h3>Cloro clorox</h3>
+                <p class="precio">Q40.00</p>
+                <button onclick="agregarCarrito('Cloro clorox',12)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="jabón en polvo fab.jfif" alt="">
+                <h3>Jabón en polvo FAB</h3>
+                <p class="precio">Q23.00</p>
+                <button onclick="agregarCarrito('Jabón en polvo FAB',9)">Agregar</button>
+            </div>
+
+             <!-- Belleza -->
+    <section id="Belleza">
+        <h2> Belleza</h2>
+
+        <div class="productos">
+
+            <div class="card">
+                <img src="rimel.jfif" alt="">
+                <h3>Rimel prosa</h3>
+                <p class="precio">Q25.00</p>
+                <button onclick="agregarCarrito('Rimel de prosa',25)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="enchinador.jfif" alt="">
+                <h3>Enchinador de pestañas</h3>
+                <p class="precio">Q30.00</p>
+                <button onclick="agregarCarrito('Enchinador de pestañas',30)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="Elf.jfif" alt="">
+                <h3>primer de elf</h3>
+                <p class="precio">Q50.00</p>
+                <button onclick="agregarCarrito('primer de elf',50)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="labiales.jfif" alt="">
+                <h3>labiales Italia deluxe</h3>
+                <p class="precio">Q120.00</p>
+                <button onclick="agregarCarrito('Labiales Italia deluxe',120)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="rubor.jfif" alt="">
+                <h3>Rubor rare beauty</h3>
+                <p class="precio">Q200.00</p>
+                <button onclick="agregarCarrito('Rubor rare beauty',200)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="polvo.jfif" alt="">
+                <h3>Polvo hudabeauty</h3>
+                <p class="precio">Q80.00</p>
+                <button onclick="agregarCarrito('Polvo hudabeauty',80)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="espejo.jfif" alt="">
+                <h3>Espejo hello kitty</h3>
+                <p class="precio">Q60.00</p>
+                <button onclick="agregarCarrito('Espejo hello kitty',60)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="correctores.jfif" alt="">
+                <h3>Correctores L'ORÉAL paris</h3>
+                <p class="precio">Q100.00</p>
+                <button onclick="agregarCarrito('Correctores loreal paris',100)">Agregar</button>
+            </div>
+
+             <!-- Ropa de mujere -->
+    <section id="Ropa de mujer">
+        <h2> Ropa de mujer</h2>
+
+        <div class="productos">
+
+            <div class="card">
+                <img src="vestido B.jfif" alt="">
+                <h3>Vestido blanco</h3>
+                <p class="precio">Q150.00</p>
+                <label>Talla:</label>
+
+<select>
+    <option>XS</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+</select>
+                <button onclick="agregarCarrito('vestido blanco',150)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="SHORT.jfif" alt="">
+                <h3>short de mezclilla</h3>
+                <p class="precio">Q76.00</p>
+                <label>Talla:</label>
+
+<select>
+    <option>XS</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+</select>
+                <button onclick="agregarCarrito('short de mezclilla',76)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="Blusa r.jfif" alt="">
+                <h3>blusa color rosada</h3>
+                <p class="precio">Q65.00</p>
+                <label>Talla:</label>
+
+<select>
+    <option>XS</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+</select>
+                <button onclick="agregarCarrito('Blusa color rosada',65)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="blusa n.jfif" alt="">
+                <h3>blusa color negra</h3>
+                <p class="precio">Q90.00</p>
+                <label>Talla:</label>
+
+<select>
+    <option>XS</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+</select>
+                <button onclick="agregarCarrito('Blusa color negra',90)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="blusa a.jfif" alt="">
+                <h3>Blusa color azul</h3>
+                <p class="precio">Q85.00</p>
+                <label>Talla:</label>
+
+<select>
+    <option>XS</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+</select>
+                <button onclick="agregarCarrito('Blusa de color azul',85)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="pantalon.jfif" alt="">
+                <h3>Pantalón celeste recto</h3>
+                <p class="precio">Q250.00</p>
+                <label>Talla:</label>
+
+<select>
+    <option>XS</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+</select>
+                <button onclick="agregarCarrito('Pantalón celeste recto',250)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="roto.jfif" alt="">
+                <h3>Pantalón celeste roto</h3>
+                <p class="precio">Q240.00</p>
+                <label>Talla:</label>
+
+<select>
+    <option>XS</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+</select>
+                <button onclick="agregarCarrito('Pantalón celeste roto',240)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <img src="negro.jfif" alt="">
+                <h3>vestido de color negro</h3>
+                <p class="precio">Q300.00</p>
+                <label>Talla:</label>
+
+<select>
+    <option>XS</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+</select>
+                <button onclick="agregarCarrito('vestido de color negro',300)">Agregar</button>
+            </div>
+
+        </div>
+    </section>
+
+        </div>
+    </section>
+
+        </div>
+    </section>
+
+    <section id="carrito">
+
+    <h2> Carrito de Compras</h2>
+
+    <table>
+
+        <tr>
+            <th>Producto</th>
+            <th>Precio Unitario</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>Coca Cola</td>
+            <td>Q10.00</td>
+            <td>2</td>
+            <td>Q20.00</td>
+        </tr>
+
+        <tr>
+            <td>Papas Lays</td>
+            <td>Q8.00</td>
+            <td>1</td>
+            <td>Q8.00</td>
+        </tr>
+
+        <tr>
+            <td>Manzanas</td>
+            <td>Q15.00</td>
+            <td>3</td>
+            <td>Q45.00</td>
+        </tr>
+
+    </table>
+
+    <h3>Total a pagar: Q73.00</h3>
+
+</section>
+
+    <!-- PERFIL -->
+    <section id="perfil" class="perfil">
+        <h2> Mi Perfil</h2>
+
+        <img src="clienta.jfif" alt="">
+
+        <p><strong>Nombre:</strong> Valeria Morales</p>
+        <p><strong>Correo:</strong> valeria@gmail.com</p>
+        <p><strong>Fecha de nacimiento:</strong> 15/08/2005</p>
+        <p><strong>Teléfono:</strong> 5555-5555</p>
+        <p><strong>Dirección:</strong> Guatemala</p>
+    </section>
+
+    <!-- PIE -->
+    <footer>
+        <p>© 2026 Supermercado Kitty</p>
+    </footer>
+
+    <footer>
+    <p>Abigail Coro - 3190-26-27414</p>
+</footer>
+
+</body>
+</html>
